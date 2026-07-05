@@ -1,6 +1,9 @@
 # LTRC NAS storage (gaur)
 
-gaur is a Synology NAS running DSM 7.3 for lab-wide storage. The web UI is at <gaur.iiit.ac.in>. The lab compute nodes will mount it over NFS once they are attached.
+`gaur` is a Synology NAS running DSM 7.3 for lab-wide storage. 
+The web UI is at `gaur.iiit.ac.in`. The lab compute nodes will mount it over NFS once they are attached.
+It has 50TB from 5x10TB 7200RPM HDD disks with RAID 5 configuration giving us about 40TB usable storage space effectively. 
+It is connected to others in Himalaya server room through a 10Gbps network switch and rest-of-IIIT through the 1Gbps bottleneck.
 
 ## Accounts
 
