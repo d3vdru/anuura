@@ -9,7 +9,7 @@ mkdir -p llama_server && cd llama_server
 module load u22/singularity-ce
 
 # Pull the official llama.cpp CUDA container
-singularity pull llama-cpp-cuda.sif docker://ghcr.io/ggerganov/llama.cpp:server-cuda
+singularity pull llama-cpp-cuda.sif docker://ghcr.io/ggml-org/llama.cpp:server-cuda
 
 # Download a quantized GGUF model (Example: Llama-3-8B Q4)
 # !! This will overwrite model.gguf if it exists

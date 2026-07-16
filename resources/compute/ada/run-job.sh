@@ -35,4 +35,4 @@ echo "Starting llama.cpp server..."
 singularity exec --nv \
   -B /ssd_scratch:/ssd_scratch \
   /home2/$USER/llama_server/llama-cpp-cuda.sif \
-bash -c 'export LD_LIBRARY_PATH=/app:/usr/local/lib:/usr/local/lib64:$LD_LIBRARY_PATH && /app/llama-server -m /ssd_scratch/'"$USER"'/model.gguf --fit -fitt 128 --host 0.0.0.0 --port 8080'
+bash -c 'export LD_LIBRARY_PATH=/app:/usr/local/lib:/usr/local/lib64:$LD_LIBRARY_PATH && /app/llama-server -m /ssd_scratch/'"$USER"'/model.gguf --fit on -fitt 128 -np 1 --host 0.0.0.0 --port 8080'
